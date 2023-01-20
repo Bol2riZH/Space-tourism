@@ -1,0 +1,10 @@
+@use "../abstract/variables";
+
+body {
+  font-family: "Bellefair", serif;
+  color: variables.$color-secondary;
+}
+
+.heading-1 {
+  font-size: variables.$font-size-heading-1;
+}

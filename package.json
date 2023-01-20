@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "watch:sass": "sass --watch src/style/sass/main.scss src/style/css/main.css",
+    "watch:sass": "sass --watch  src/assets/style/sass/main.scss src/assets/style/css/main.css",
     "dev": "vite",
     "start": "npm-run-all --parallel dev watch:sass",
     "build": "run-p type-check build-only",

@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #0b0d17;
+  color: #fff;
+}
+
+body {
+  font-family: "Bellefair", serif;
+  color: #d0d6f9;
+}
+
+.heading-1 {
+  font-size: 15rem;
+}
+
+.navigation__bar {
+  position: relative;
+  margin-top: 3.5rem;
+}
+.navigation__bar, .navigation__bar::before, .navigation__bar::after {
+  width: 3rem;
+  height: 2px;
+  display: inline-block;
+}
+.navigation__bar::before, .navigation__bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.navigation__bar::before {
+  top: -0.8rem;
+}
+.navigation__bar::after {
+  top: 0.8rem;
+}
+
+.home {
+  background: no-repeat url("/src/assets/image/home/background-home-mobile.jpg");
+}
+
+/*# sourceMappingURL=main.css.map */
