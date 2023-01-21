@@ -22,3 +22,9 @@ body {
   font-size: variables.$font-size-paragraphe;
   line-height: variables.$line-height-paragraphe;
 }
+
+.btn__main {
+  font-family: "Bellefair", serif;
+  font-size: variables.$font-size-btn;
+  text-transform: uppercase;
+}

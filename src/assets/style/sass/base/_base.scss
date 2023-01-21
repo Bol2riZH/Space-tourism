@@ -16,6 +16,12 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
 ::selection {
   background-color: variables.$color-white;
   color: variables.$color-primary;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import BurgerMenu from "@/components/burgerMenu.vue";
+import BurgerMenu from "@/component/burgerMenu.vue";
 import Header from "@/Layout/Header.vue";
 </script>
 

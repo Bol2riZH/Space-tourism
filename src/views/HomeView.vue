@@ -1,6 +1,6 @@
 <script>
 import { defineComponent } from "vue";
-import Button from "@/components/button.vue";
+import Button from "@/component/button.vue";
 
 export default defineComponent({
   components: { Button },
