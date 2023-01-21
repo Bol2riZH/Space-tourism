@@ -15,17 +15,31 @@ body {
 }
 
 ::selection {
-  background-color: #0b0d17;
-  color: #fff;
+  background-color: #fff;
+  color: #0b0d17;
 }
 
 body {
-  font-family: "Bellefair", serif;
+  font-family: "Barlow", serif;
   color: #d0d6f9;
 }
 
 .heading-1 {
+  font-family: "Bellefair", serif;
   font-size: 15rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.subHeading-1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.section__home--paragraphe {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
 }
 
 .navigation__bar {
@@ -50,8 +64,11 @@ body {
   top: 0.8rem;
 }
 
-.home {
+.section__home {
+  height: 100vh;
   background: no-repeat url("/src/assets/image/home/background-home-mobile.jpg");
+  background-size: cover;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

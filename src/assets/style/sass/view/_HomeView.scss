@@ -1,5 +1,8 @@
 @use "../abstract/variables";
 
-.home {
+.section__home {
+  height: 100vh;
   background: no-repeat url("/src/assets/image/home/background-home-mobile.jpg");
+  background-size: cover;
+  text-align: center;
 }
