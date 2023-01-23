@@ -1,4 +1,5 @@
 @use "../abstract/variables";
+@use "../abstract/mixins";
 
 *,
 *::after,
@@ -10,10 +11,28 @@
 
 html {
   font-size: 62.5%;
+
+  @include mixins.respond(tab-land) {
+    font-size: 60%;
+  }
+  @include mixins.respond(tab-port) {
+    font-size: 56.25%;
+  }
+  @include mixins.respond(phone) {
+    font-size: 33.35%;
+  }
+  @include mixins.respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  height: 100%;
+  margin: variables.$margin-side;
+
+  background: no-repeat url("/src/assets/image/home/background-home-mobile.jpg");
+  background-size: cover;
 }
 
 button {

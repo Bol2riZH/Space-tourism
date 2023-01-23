@@ -1,11 +1,13 @@
+@use "abstract/mixins";
 @use "abstract/variables";
 
 @use "base/base";
 @use "base/typography";
 
 @use "component/button";
+@use "component/burgerMenu";
 
+@use "layout/header";
 @use "layout/navigation";
-@use "layout/section";
 
-@use "view/HomeView";
+@use "view/homeView";
