@@ -1,10 +1,5 @@
-<script>
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import Navigation from "@/Layout/Navigation.vue";
-
-export default defineComponent({
-  components: { Navigation },
-});
 </script>
 
 <template>

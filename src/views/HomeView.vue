@@ -1,10 +1,5 @@
-<script>
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import Button from "@/component/Button.vue";
-
-export default defineComponent({
-  components: { Button },
-});
 </script>
 
 <template>
