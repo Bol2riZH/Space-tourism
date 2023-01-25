@@ -12,7 +12,6 @@ $color-grey: #616476;
 
 // FONT
 $font-weight-regular: 400;
-$line-height-paragraphe: 3.2rem;
 
 $font-size-heading-1: 15rem;
 $font-size-heading-2: 10rem;
@@ -29,9 +28,13 @@ $font-size-navigation-link: 16px;
 
 $font-size-btn: 3.2rem;
 
-$font-space-subheading-2: 2.35;
-$font-space-heading-5: 4.75;
-$font-space-nav-text: 2.7;
+$font-letter-space-subheading-2: 2.35px;
+
+$font-letter-space-heading-5: 4.75px;
+
+$font-letter-space-nav-text: 2.7px;
+$font-line-height-nav-text: 32px;
+$font-line-height-paragraphe: 3.2rem;
 
 // BORDER
 $border-hovered-width: 3px;

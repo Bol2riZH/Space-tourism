@@ -13,22 +13,22 @@ defineProps(['onToggleMenu']);
       />
     </div>
     <ul class="navigation__links">
-      <li class="navigation__links--item">
+      <li class="navigation__links--item nav-link">
         <RouterLink class="navigation__links--router-link" to="/"
           >Home</RouterLink
         >
       </li>
-      <li class="navigation__links--item">
+      <li class="navigation__links--item nav-link">
         <RouterLink class="navigation__links--router-link" to="/destination"
           >Destination</RouterLink
         >
       </li>
-      <li class="navigation__links--item">
+      <li class="navigation__links--item nav-link">
         <RouterLink class="navigation__links--router-link" to="/crew"
           >Crew</RouterLink
         >
       </li>
-      <li class="navigation__links--item">
+      <li class="navigation__links--item nav-link">
         <RouterLink class="navigation__links--router-link" to="/technology"
           >Technology</RouterLink
         >

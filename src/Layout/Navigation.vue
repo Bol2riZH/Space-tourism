@@ -22,7 +22,7 @@ const onToggleMenu = () => {
 <style scoped>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 600ms ease;
+  transition: opacity 500ms ease-in-out;
 }
 
 .v-enter-from,
