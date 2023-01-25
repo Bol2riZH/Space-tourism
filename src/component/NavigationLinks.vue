@@ -4,24 +4,35 @@ defineProps(['onToggleMenu']);
 </script>
 
 <template>
-  <ul class="navigation__links--close-cross" @click="onToggleMenu">
-    <li class="navigation__links--item">
+  <div class="navigation__container">
+    <div class="navigation__close-cross">
       <img
+        @click="onToggleMenu"
         src="src/assets/image/shared/icon-close.svg"
         alt="close navigation menu"
       />
-    </li>
-    <li class="navigation__links--item">
-      <RouterLink to="/">Home</RouterLink>
-    </li>
-    <li class="navigation__links--item">
-      <RouterLink to="/destination">Destination</RouterLink>
-    </li>
-    <li class="navigation__links--item">
-      <RouterLink to="/crew">Crew</RouterLink>
-    </li>
-    <li class="navigation__links--item">
-      <RouterLink to="/technology">Technology</RouterLink>
-    </li>
-  </ul>
+    </div>
+    <ul class="navigation__links">
+      <li class="navigation__links--item">
+        <RouterLink class="navigation__links--router-link" to="/"
+          >Home</RouterLink
+        >
+      </li>
+      <li class="navigation__links--item">
+        <RouterLink class="navigation__links--router-link" to="/destination"
+          >Destination</RouterLink
+        >
+      </li>
+      <li class="navigation__links--item">
+        <RouterLink class="navigation__links--router-link" to="/crew"
+          >Crew</RouterLink
+        >
+      </li>
+      <li class="navigation__links--item">
+        <RouterLink class="navigation__links--router-link" to="/technology"
+          >Technology</RouterLink
+        >
+      </li>
+    </ul>
+  </div>
 </template>

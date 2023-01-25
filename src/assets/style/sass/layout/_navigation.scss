@@ -1,4 +1,61 @@
-@use "../abstract/variables";
+@use '../abstract/variables';
 
 .navigation {
+  &__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 255px;
+    height: 100vh;
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(30px);
+  }
+  &__close-cross {
+    align-self: flex-end;
+
+    padding-top: 34px;
+    padding-right: 27px;
+    margin-bottom: 67px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    position: relative;
+    color: variables.$color-white;
+    counter-reset: navigation-list -1;
+    margin-left: 32px;
+
+    &--item {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 16px;
+      &:hover {
+        border-right: variables.$color-white-hovered
+          variables.$border-hovered-width solid;
+      }
+      &::before {
+        content: '0' counter(navigation-list);
+        counter-increment: navigation-list;
+      }
+    }
+    &--router-link {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  .router-link-active {
+    border-right: variables.$color-white variables.$border-hovered-width solid;
+    &:hover {
+      border-right: transparent 3px solid;
+    }
+  }
 }

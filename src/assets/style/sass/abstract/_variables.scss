@@ -7,6 +7,7 @@ $color-primary: #0b0d17;
 $color-secondary: #d0d6f9;
 
 $color-white: #fff;
+$color-white-hovered: rgba(255, 255, 255, 0.5);
 $color-grey: #616476;
 
 // FONT
@@ -24,10 +25,13 @@ $font-size-subheading-2: 1.4rem;
 
 $font-size-paragraphe: 1.8rem;
 
-$font-size-nav-text: 1.6rem;
+$font-size-navigation-link: 16px;
 
 $font-size-btn: 3.2rem;
 
 $font-space-subheading-2: 2.35;
 $font-space-heading-5: 4.75;
 $font-space-nav-text: 2.7;
+
+// BORDER
+$border-hovered-width: 3px;

@@ -1,12 +1,11 @@
-@use "../abstract/variables";
+@use '../abstract/variables';
 
 body {
-  font-family: "Barlow", serif;
-  color: variables.$color-secondary;
+  font-family: 'Barlow', serif;
 }
 
 .heading-1 {
-  font-family: "Bellefair", serif;
+  font-family: 'Bellefair', serif;
   font-size: variables.$font-size-heading-1;
   font-weight: variables.$font-weight-regular;
   color: variables.$color-white;
@@ -23,8 +22,19 @@ body {
   line-height: variables.$line-height-paragraphe;
 }
 
+.navigation__links--item {
+  font-size: variables.$font-size-navigation-link;
+  line-height: 32px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+
+  &::before {
+    font-weight: 900;
+  }
+}
+
 .btn__main {
-  font-family: "Bellefair", serif;
+  font-family: 'Bellefair', serif;
   font-size: variables.$font-size-btn;
   text-transform: uppercase;
 }
