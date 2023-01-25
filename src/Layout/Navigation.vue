@@ -13,6 +13,20 @@ const onToggleMenu = () => {
 <template>
   <nav class="navigation">
     <BurgerMenu @click="onToggleMenu" v-if="toggleMenu" />
-    <NavigationLinks v-else :onToggleMenu="onToggleMenu" />
+    <Transition>
+      <NavigationLinks v-if="!toggleMenu" :onToggleMenu="onToggleMenu" />
+    </Transition>
   </nav>
 </template>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 600ms ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
