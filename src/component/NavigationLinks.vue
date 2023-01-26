@@ -8,7 +8,7 @@ defineProps(['onToggleMenu']);
     <div class="navigation__close-cross">
       <img
         @click="onToggleMenu"
-        src="src/assets/image/shared/icon-close.svg"
+        src="../assets/image/icon/icon-close.svg"
         alt="close navigation menu"
       />
     </div>
