@@ -43,8 +43,6 @@ body {
   height: 100%;
   margin: 0 24px;
   color: #d0d6f9;
-  background: no-repeat url("/src/assets/image/home/background-home-mobile.jpg");
-  background-size: cover;
 }
 
 a {
