@@ -17,7 +17,7 @@ const screen = reactive({
 });
 
 const background = reactive({
-  url: './src/assets/image/home/background-home-mobile.jpg',
+  url: 'src/assets/image/home/background-home-mobile.jpg',
   size: 'cover',
   width: screen.width,
 });
@@ -26,7 +26,7 @@ const concatBackgroundUrlOption = (
   pageName: string | string[],
   format: string | boolean
 ): any => {
-  return `no-repeat url('./src/assets/image/${pageName}/background-${pageName}-${format}.jpg')`;
+  return `no-repeat url('src/assets/image/${pageName}/background-${pageName}-${format}.jpg')`;
 };
 
 watch(route, () => {
@@ -35,10 +35,9 @@ watch(route, () => {
   route.params.name === undefined
     ? (pageName = 'home')
     : (pageName = route.params.name);
-
   background.url = concatBackgroundUrlOption(pageName, screen.width);
-  document.body.style.background = background.url;
-  document.body.style.backgroundSize = background.size;
+  // document.body.style.background = background.url;
+  // document.body.style.backgroundSize = background.size;
 });
 </script>
 

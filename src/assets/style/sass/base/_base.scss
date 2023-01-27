@@ -31,6 +31,8 @@ body {
   height: 100vh;
   margin: variables.$margin-side;
   color: variables.$color-secondary;
+  background: url('src/assets/image/home/background-home-desktop.jpg');
+  background-size: cover;
 }
 
 a {
