@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-
-  margin: 24px 0;
+  margin: 24px auto;
   text-align: center;
+
   &--img {
     width: 170px;
     animation: rotate 100s infinite linear;
@@ -24,8 +24,32 @@
   }
 
   &--items {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+
+      width: 100%;
+      height: variables.$border-hovered-width;
+
+      background-color: variables.$color-grey;
+
+      scale: 0;
+      transition: all 200ms ease-in-out;
+    }
+
     &:hover {
       cursor: pointer;
+      &::before {
+        scale: 1;
+      }
+    }
+    &:active {
+      &::before {
+        background-color: variables.$color-white;
+      }
     }
   }
 

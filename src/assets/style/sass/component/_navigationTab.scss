@@ -1,0 +1,36 @@
+@use '../abstract/variables';
+
+.navigation__tab {
+  display: flex;
+  gap: 26px;
+
+  &--item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+
+      width: 100%;
+      height: variables.$border-hovered-width;
+
+      background-color: variables.$color-grey;
+
+      scale: 0;
+      transition: all 200ms ease-in-out;
+    }
+
+    &:hover {
+      cursor: pointer;
+      &::before {
+        scale: 1;
+      }
+    }
+    &:active {
+      &::before {
+        background-color: variables.$color-white;
+      }
+    }
+  }
+}

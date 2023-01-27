@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import data from '../../data.json';
+import NavigationTab from '@/component/NavigationTab.vue';
+
+defineProps({
+  destinationName: String,
+});
 </script>
 
 <template>
@@ -12,6 +17,8 @@ import data from '../../data.json';
     <div class="section__destination--img">
       <img :src="`${data.destinations[0].images.webp}`" alt="planet" />
     </div>
+
+    <NavigationTab :destinationName="data.destinations[0].name" />
 
     <ul class="section__destination--list">
       <li class="section__destination--items nav-link">

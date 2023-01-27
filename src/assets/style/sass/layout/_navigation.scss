@@ -34,14 +34,32 @@
     margin-left: 32px;
 
     &--item {
+      position: relative;
       display: flex;
       gap: 10px;
       width: 100%;
       margin-bottom: 16px;
-      &:hover {
-        border-right: variables.$color-white-hovered
-          variables.$border-hovered-width solid;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 1px;
+
+        height: 100%;
+        width: variables.$border-hovered-width;
+
+        background-color: variables.$color-grey;
+
+        scale: 0;
+        transition: all 200ms ease-in-out;
       }
+
+      &:hover {
+        &::after {
+          scale: 1;
+        }
+      }
+
       &::before {
         content: '0' counter(navigation-list);
         counter-increment: navigation-list;
@@ -53,9 +71,7 @@
     }
   }
   .router-link-active {
+    z-index: 3;
     border-right: variables.$color-white variables.$border-hovered-width solid;
-    &:hover {
-      border-right: transparent 3px solid;
-    }
   }
 }
