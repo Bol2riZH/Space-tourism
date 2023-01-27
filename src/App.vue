@@ -36,8 +36,8 @@ watch(route, () => {
     ? (pageName = 'home')
     : (pageName = route.params.name);
   background.url = concatBackgroundUrlOption(pageName, screen.width);
-  // document.body.style.background = background.url;
-  // document.body.style.backgroundSize = background.size;
+  document.body.style.background = background.url;
+  document.body.style.backgroundSize = background.size;
 });
 </script>
 
