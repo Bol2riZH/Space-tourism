@@ -1,16 +1,11 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
-defineProps(['onToggleMenu']);
 </script>
 
 <template>
   <div class="navigation__container">
     <div class="navigation__close-cross">
-      <img
-        @click="onToggleMenu"
-        src="../assets/icon/icon-close.svg"
-        alt="close navigation menu"
-      />
+      <img src="../assets/icon/icon-close.svg" alt="close navigation menu" />
     </div>
     <ul class="navigation__links">
       <li class="navigation__links--item nav-link">

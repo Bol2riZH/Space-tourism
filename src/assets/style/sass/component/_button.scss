@@ -23,6 +23,7 @@
     height: 20rem;
     border-radius: 50%;
     background-color: variables.$color-white;
+    color: variables.$color-primary;
     margin: 8.8rem;
     &::after {
       content: '';
