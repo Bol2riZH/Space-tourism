@@ -25,7 +25,7 @@ const background = reactive({
 const concatBackgroundUrlOption = (
   pageName: string | string[],
   format: string | boolean
-): any => {
+): string => {
   return `no-repeat url('src/assets/image/${pageName}/background-${pageName}-${format}.jpg')`;
 };
 
