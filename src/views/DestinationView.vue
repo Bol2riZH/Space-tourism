@@ -10,7 +10,7 @@ import data from '../../data.json';
     </h2>
 
     <div class="section__destination--img">
-      <img :src="`src/${data.destinations[0].images.webp}`" alt="planet" />
+      <img :src="`${data.destinations[0].images.webp}`" alt="planet" />
     </div>
 
     <ul class="section__destination--list">

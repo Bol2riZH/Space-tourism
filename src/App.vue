@@ -2,7 +2,7 @@
 import { watch, reactive } from 'vue';
 import { RouterView, useRoute } from 'vue-router';
 
-import Header from '@/Layout/Header.vue';
+import Header from '@/layouts/Header.vue';
 
 const route = useRoute();
 
