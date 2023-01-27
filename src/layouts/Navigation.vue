@@ -24,6 +24,7 @@ onClickOutside(inner_nav, () => {
         ref="inner_nav"
         v-if="!toggleMenu"
         :onToggleMenu="onToggleMenu"
+        @click="onToggleMenu"
       />
     </Transition>
   </nav>

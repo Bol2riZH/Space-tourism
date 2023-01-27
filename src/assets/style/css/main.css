@@ -56,7 +56,9 @@ body {
   color: #d0d6f9;
 }
 
-a {
+a,
+a:link,
+a:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -154,10 +156,13 @@ body {
   cursor: pointer;
 }
 
+.btn {
+  margin: 3rem auto;
+}
 .btn__hover-effect {
   position: absolute;
-  width: 27.4rem;
-  height: 27.4rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   opacity: 0;
@@ -171,8 +176,8 @@ body {
 }
 .btn__main {
   position: relative;
-  width: 27.4rem;
-  height: 27.4rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   background-color: #fff;
   margin: 8.8rem;
@@ -182,8 +187,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 27.4rem;
-  height: 27.4rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   opacity: 1;
@@ -222,6 +227,7 @@ body {
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .navigation__close-cross {
   align-self: flex-end;
