@@ -84,7 +84,7 @@ body {
 
 .heading-1 {
   font-family: "Bellefair", serif;
-  font-size: 15rem;
+  font-size: 12rem;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
@@ -228,7 +228,7 @@ body {
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
 }
 .navigation__close-cross {
   align-self: flex-end;
