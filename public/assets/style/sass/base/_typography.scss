@@ -1,0 +1,75 @@
+@use '../abstract/variables';
+
+body {
+  font-family: 'Barlow', serif;
+}
+
+.heading-1 {
+  font-family: 'Bellefair', serif;
+  font-size: variables.$font-size-heading-1;
+  font-weight: variables.$font-weight-regular;
+  color: variables.$color-white;
+  text-transform: uppercase;
+}
+
+.sub-heading-1 {
+  font-family: 'Bellefair', serif;
+  font-size: variables.$font-size-subheading-1;
+  font-weight: variables.$font-weight-regular;
+  color: variables.$color-white;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-family: 'Bellefair', serif;
+  font-size: variables.$font-size-heading-2;
+  font-weight: variables.$font-weight-regular;
+  color: variables.$color-white;
+  text-transform: uppercase;
+}
+
+.sub-heading-2 {
+  font-family: 'Barlow Condensed', serif;
+  font-size: variables.$font-size-subheading-2;
+  font-weight: variables.$font-weight-regular;
+  letter-spacing: variables.$font-letter-space-subheading-2;
+  text-transform: uppercase;
+}
+
+.heading-5 {
+  font-size: variables.$font-size-heading-5;
+  font-weight: variables.$font-weight-regular;
+  letter-spacing: variables.$font-letter-space-heading-5;
+  text-transform: uppercase;
+
+  &__prefix {
+    color: variables.$color-grey;
+  }
+  &__title {
+    color: variables.$color-white;
+  }
+}
+
+.paragraph {
+  font-size: variables.$font-size-paragraphe;
+  line-height: variables.$font-line-height-paragraphe;
+}
+
+.nav-link {
+  font-size: variables.$font-size-navigation-link;
+  line-height: variables.$font-line-height-nav-text;
+  letter-spacing: variables.$font-letter-space-nav-text;
+  text-transform: uppercase;
+
+  color: variables.$color-white;
+
+  &::before {
+    font-weight: 900;
+  }
+}
+
+.btn__main {
+  font-family: 'Bellefair', serif;
+  font-size: variables.$font-size-btn;
+  text-transform: uppercase;
+}
