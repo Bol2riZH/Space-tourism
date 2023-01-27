@@ -33,12 +33,12 @@ import data from '../../data.json';
       <p class="paragraph">{{ data.destinations[0].description }}</p>
     </div>
 
-    <div class="section__destination--information">
-      <div class="section__destination--distance">
+    <div class="section__destination--bottom-container">
+      <div class="section__destination--information">
         <h3 class="sub-heading-2">avg. distance</h3>
         <span class="sub-heading-1">{{ data.destinations[0].distance }}</span>
       </div>
-      <div class="section__destination--travel">
+      <div class="section__destination--information">
         <h3 class="sub-heading-2">est. travel time</h3>
         <span class="sub-heading-1">{{ data.destinations[0].travel }}</span>
       </div>

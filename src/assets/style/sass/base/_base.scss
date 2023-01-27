@@ -19,7 +19,7 @@ html {
     font-size: 56.25%;
   }
   @include mixins.respond(phone) {
-    font-size: 33.35%;
+    font-size: 36%;
   }
   @include mixins.respond(big-desktop) {
     font-size: 75%;
