@@ -1,4 +1,4 @@
-@use "../abstract/variables";
+@use '../abstract/variables';
 
 .btn {
   &__hover-effect {
@@ -24,7 +24,7 @@
     background-color: variables.$color-white;
     margin: 8.8rem;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -37,12 +37,19 @@
       scale: 1;
       transition: all 500ms ease;
     }
-    &:hover::after {
-      opacity: 1;
-      scale: 1.64;
+    @media (hover: hover) {
+      &:hover::after {
+        opacity: 1;
+        scale: 1.64;
+      }
+      &:active::after {
+        scale: 1.4;
+      }
     }
-    &:active::after {
-      scale: 1.4;
+    @media (hover: none) {
+      &:active::after {
+        animation: pressButton 500ms ease;
+      }
     }
   }
 }

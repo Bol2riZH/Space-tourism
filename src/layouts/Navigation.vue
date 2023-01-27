@@ -32,7 +32,7 @@ onClickOutside(inner_nav, () => {
 <style scoped>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 250ms linear;
 }
 
 .v-enter-from,

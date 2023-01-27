@@ -6,6 +6,17 @@
     rotate: 360deg;
   }
 }
+@keyframes pressButton {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.4;
+  }
+  100% {
+    scale: 1;
+  }
+}
 *,
 *::after,
 *::before {
@@ -179,12 +190,19 @@ body {
   scale: 1;
   transition: all 500ms ease;
 }
-.btn__main:hover::after {
-  opacity: 1;
-  scale: 1.64;
+@media (hover: hover) {
+  .btn__main:hover::after {
+    opacity: 1;
+    scale: 1.64;
+  }
+  .btn__main:active::after {
+    scale: 1.4;
+  }
 }
-.btn__main:active::after {
-  scale: 1.4;
+@media (hover: none) {
+  .btn__main:active::after {
+    animation: pressButton 500ms ease;
+  }
 }
 
 .header {
@@ -244,6 +262,9 @@ body {
 }
 
 .section__home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 4.8rem;
   text-align: center;
 }
