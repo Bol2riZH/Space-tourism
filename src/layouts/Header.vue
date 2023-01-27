@@ -5,11 +5,7 @@ import Navigation from '@/layouts/Navigation.vue';
 <template>
   <header class="header">
     <div class="header__logo">
-      <img
-        class="header__logo--img"
-        src="assets/image/icon/logo.svg"
-        alt="logo"
-      />
+      <img class="header__logo--img" src="../assets/icon/logo.svg" alt="logo" />
     </div>
     <Navigation />
   </header>
